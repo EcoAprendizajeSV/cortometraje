@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #eaeaea;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+}
+
+.right-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.right-link a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-text, .right-link {
+        margin: 10px 0;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+}
+
+/* Nueva clase para el botón de traducir */
+.translate-btn {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.translate-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.translate-btn:active {
+    background-color: #0056b3;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .translate-btn {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
+
+
+.movie-container {
+    max-width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.movie-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el contenido en la parte superior */
+}
+
+.movie-poster img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-details {
+    flex: 1;
+    min-width: 250px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.movie-description {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+ul li strong {
+    color: #333;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .movie-content {
+        flex-direction: column;
+        align-items: center; /* Centra en dispositivos más pequeños */
+    }
+}
+
+
+/* Botón "Ver ahora" */
+.ver-ahora-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.ver-ahora-btn:hover {
+    background-color: #ff4500;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenido del modal */
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 900px; /* Tamaño máximo para pantallas grandes */
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del video */
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Botón de cerrar (X) */
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-modal:hover {
+    color: #ff6600;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 100%; /* Ocupa todo el ancho en móviles */
+        max-width: 100%; 
+        padding: 0 10px; /* Añade algo de espacio lateral en móviles */
+    }
+
+    .close-modal {
+        top: 10px;
+        right: 10px;
+        font-size: 25px; /* Tamaño reducido para móviles */
+    }
+
+    video {
+        width: 100%;
+        height: auto; /* Ajuste automático de la altura */
+    }
+}
+
+
+.moraleja-container {
+    background-color: #fff; /* Mantiene el fondo blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 20px auto; /* Centra el contenedor */
+    max-width: 100%; /* Abarca todo el ancho disponible */
+    text-align: center; /* Alinea el texto y el título al centro */
+}
+
+.moraleja-title {
+    font-size: 25px; /* Tamaño del título */
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+.moraleja-text {
+    font-size: 18px; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    color: #333; /* Color del texto */
+    margin: 0 auto; /* Asegura el centrado */
+    max-width: 80%; /* Ajusta el ancho del texto para que no sea muy ancho */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .moraleja-container {
+        padding: 15px;
+    }
+
+    .moraleja-title {
+        font-size: 20px;
+    }
+
+    .moraleja-text {
+        font-size: 17px;
+        max-width: 90%; /* Ajusta el ancho del texto para pantallas pequeñas */
+    }
+}
+
+
+.comments-section {
+    width: 100%; /* Ocupa todo el ancho de la página */
+    padding: 20px; /* Espacio alrededor de la sección */
+    background-color: #ffffff; /* Color de fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.valoraciones {
+    font-size: 25px; /* Tamaño de fuente del título */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #333; /* Color del texto */
+}
+
+.comment {
+    display: flex; /* Flexbox para disposición */
+    background-color: #f9f9f9; /* Color de fondo del comentario */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 15px; /* Espacio entre comentarios */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s; /* Efecto de transición */
+}
+
+.comment:hover {
+    transform: translateY(-2px); /* Efecto al pasar el mouse */
+}
+
+.comment img {
+    border-radius: 50%; /* Hace la imagen circular */
+    margin-right: 15px; /* Espacio a la derecha de la imagen */
+    width: 60px; /* Ancho de la imagen */
+    height: 60px; /* Alto de la imagen */
+}
+
+.comment-body {
+    flex: 1; /* Permite que el contenido ocupe el espacio restante */
+}
+
+.comment-body h4 {
+    margin: 0; /* Sin margen */
+    color: #333; /* Color del nombre del usuario */
+    font-size: 18px; /* Tamaño del nombre */
+}
+
+.comment-body p {
+    margin: 5px 0; /* Espacio arriba y abajo del comentario */
+    color: #555; /* Color del texto del comentario */
+    line-height: 1.4; /* Espaciado entre líneas */
+}
+
+.comment-time {
+    font-size: 12px; /* Tamaño de la fecha/hora */
+    color: #888; /* Color del texto de fecha/hora */
+    margin-top: 5px; /* Espacio arriba de la fecha/hora */
+}
+
+/* Estilos para los botones */
+.like-button, .dislike-button {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    color: #007bff; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-size: 14px; /* Tamaño de la fuente */
+    margin-right: 10px; /* Espacio entre botones */
+    transition: color 0.2s; /* Efecto de transición */
+}
+
+.like-button:hover, .dislike-button:hover {
+    color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .comment {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea el contenido al inicio */
+    }
+    .comment img {
+        margin-bottom: 10px; /* Espacio inferior en pantallas pequeñas */
+    }
+}
+
+
+
+
+.footer {
+    max-width: 100%;
+    background-color: #fff; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.footer-content {
+    text-align: center; /* Centra el texto */
+}
+
+.footer p {
+    margin: 0; /* Elimina margen del párrafo */
+    font-size: 16px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+}

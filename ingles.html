@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Header</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-text">
+            <p>Module 1.8<br>2024</p>
+        </div>
+        <div class="logo-container">
+            <img src="img/Monochrome Ilustration Graffiti Logo.png" alt="Logo"
+                class="logo">
+        </div>
+        <div class="right-link">
+            <a href="index.html" class="translate-btn">Translate to English</a>
+        </div>
+    </header>
+
+    <div class="movie-container">
+        <h1 class="movie-title"> "Under the Shadow of Influence"</h1>
+        <div class="movie-content">
+            <div class="movie-poster">
+                <img src="img/Beige Cream Modern Filipiñana Wedding Menu.png" alt="Movie Poster">
+            </div>
+            <div class="movie-details">
+                <p class="movie-description">
+                    The short film narrates the life of Charlie, a brilliant student who has always stood out for his
+                    dedication and academic effort. Since he was a child, his dreams were big, but everything changes when
+                    he enters adolescence and joins a group of friends in high school: Jorge and Eduardo. Although at
+                    first the friendship seems harmless, it soon turns into negative pressure when they invite him to explore a nearby pond, a place that becomes the stage for his transformation.
+                </p>
+                <ul>
+                    <li><strong>Title:</strong> Under the Shadow of Influence</li>
+                    <li><strong>TMDB:</strong> ★★★★★ 9.5/10</li>
+                    <li><strong>Genre:</strong> Youth Drama</li>
+                    <li><strong>Release Date:</strong> October 2024</li>
+                    <li><strong>Cast:</strong> Christopher Garcias, Jorge Hernandez, Eduardo Martinez, Jocelyn Moran,
+                        Charlie Ramirez.</li>
+                </ul>
+                <!-- "Watch Now" Button -->
+                <button id="openModal" class="ver-ahora-btn">Watch Now</button>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <video id="myVideo" controls>
+                            <source src="img/VIDEO MODULO 1.8.mp4" type="video/mp4">
+                            Your browser does not support video playback.
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="moraleja-container">
+        <h2 class="moraleja-title">Moral</h2>
+        <p class="moraleja-text">
+            The story concludes with a reflection based on <strong>Proverbs 22:6:</strong>
+            "Train up a child in the way he should go, and when he is old he will not depart from it."
+            The young people understand that true influence comes from those who inspire them to be the best version
+            of themselves. They decide that they will not let peer pressure divert them from their dreams, always choosing the
+            path that brings them closer to their goals.
+        </p>
+    </div>
+
+    <div class="comments-section">
+        <h2 class="valoraciones">Reviews</h2>
+
+        <div class="comment">
+            <img src="img/JOS.png" alt="User 1">
+            <div class="comment-body">
+                <h4>Christopher García</h4>
+                <p>I love how the short film addresses social pressure. Charlie is a very real character and his
+                    decision at the end is inspiring.</p>
+                <div class="comment-time">2 days ago</div>
+                <button class="like-button">👍 Like</button>
+                <button class="dislike-button">👎 Dislike</button>
+            </div>
+        </div>
+
+        <div class="comment">
+            <img src="img/BR.png" alt="User 2">
+            <div class="comment-body">
+                <h4>Jorge Hernandez</h4>
+                <p>A moving short film. It reflects what many young people face in their daily lives.
+                    I would definitely recommend it.</p>
+                <div class="comment-time">3 days ago</div>
+                <button class="like-button">👍 Like</button>
+                <button class="dislike-button">👎 Dislike</button>
+            </div>
+        </div>
+
+        <div class="comment">
+            <img src="img/E.png" alt="User 3">
+            <div class="comment-body">
+                <h4>Eduardo Martinez</h4>
+                <p>I identified a lot with Charlie. Sometimes peer pressure can be overwhelming, but it's
+                    important to remember that our dreams and values are what really matter. This short film
+                    inspired me to be stronger in the face of negative influences.</p>
+                <div class="comment-time">5 days ago</div>
+                <button class="like-button">👍 Like</button>
+                <button class="dislike-button">👎 Dislike</button>
+            </div>
+        </div>
+
+        <div class="comment">
+            <img src="img/J.png" alt="User 4">
+            <div class="comment-body">
+                <h4>Jocelyn Moran</h4>
+                <p>It's a great reminder that true friendship is not measured by what we do, but by how
+                    we support others.</p>
+                <div class="comment-time">1 week ago</div>
+                <button class="like-button">👍 Like</button>
+                <button class="dislike-button">👎 Dislike</button>
+            </div>
+        </div>
+
+        <div class="comment">
+            <img src="img/C.png" alt="User 5">
+            <div class="comment-body">
+                <h4>Charlie Ramirez</h4>
+                <p>The message of the short film is very powerful. It made me reflect on the decisions we make
+                    to fit in.</p>
+                <div class="comment-time">2 weeks ago</div>
+                <button class="like-button">👍 Like</button>
+                <button class="dislike-button">👎 Dislike</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Developed by 1°D 2024 &copy</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encabezado Mejorado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-text">
+            <p>Modulo 1.8<br>2024</p>
+        </div>
+        <div class="logo-container">
+            <img src="img/Monochrome Ilustration Graffiti Logo.png" alt="Logo"
+                class="logo">
+        </div>
+        <div class="right-link">
+            <a href="ingles.html" class="translate-btn">Traducir al Inglés</a>
+        </div>
+    </header>
+
+
+    <div class="movie-container">
+        <h1 class="movie-title"> “Bajo La Sombra De La Influencia”</h1>
+        <div class="movie-content">
+            <div class="movie-poster">
+                <img src="img/Beige Cream Modern Filipiñana Wedding Menu.png" alt="Póster de la película">
+            </div>
+            <div class="movie-details">
+                <p class="movie-description">
+                    El cortometraje narra la vida de Charlie, un estudiante brillante que siempre se destacó por su
+                    dedicación y esfuerzo académico. Desde pequeño, sus sueños eran grandes, pero todo cambia cuando
+                    entra a la adolescencia y se une a un grupo de amigos en el bachillerato: Jorge y Eduardo. Aunque al
+                    principio la amistad parece inofensiva, pronto se convierte en una presión negativa cuando lo
+                    invitan a explorar una poza cercana a su casa, un lugar que se convierte en el escenario de su
+                    transformación.
+                </p>
+                <ul>
+                    <li><strong>Títulos:</strong> Bajo La Sombra De La Influencia</li>
+                    <li><strong>TMDB:</strong> ★★★★★ 9.5/10</li>
+                    <li><strong>Género:</strong> Drama Juvenil</li>
+                    <li><strong>Fecha de estreno:</strong> Octubre Del 2024</li>
+                    <li><strong>Elenco:</strong> Christopher Garcias, Jorge Hernandez, Eduardo Martinez, Jocelyn Moran,
+                        Charlie Ramirez.</li>
+                </ul>
+                <!-- Botón de "Ver ahora" -->
+                <button id="openModal" class="ver-ahora-btn">Ver ahora</button>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <video id="myVideo" controls>
+                            <source src="img/VIDEO MODULO 1.8.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="moraleja-container">
+        <h2 class="moraleja-title">Moraleja</h2>
+        <p class="moraleja-text">
+            La historia concluye con una reflexión basada en <strong>Proverbios 22:6:</strong>
+            "Instruye al niño en su camino, y aun cuando sea viejo no se apartará de él."
+            Los jóvenes comprenden que la verdadera influencia proviene de quienes los inspiran a ser la mejor versión
+            de sí mismos. Deciden que no dejarán que la presión del grupo les desvíe de sus sueños, eligiendo siempre el
+            camino que los acerque a sus metas.
+        </p>
+    </div>
+
+    <div class="comments-section">
+        <h2 class="valoraciones">Reseñas</h2>
+
+        <div class="comment">
+            <img src="img/JOS.png" alt="Usuario 1">
+            <div class="comment-body">
+                <h4>Christopher García</h4>
+                <p>Me encanta cómo el cortometraje aborda la presión social. Charlie es un personaje muy real y su
+                    decisión al final es inspiradora.</p>
+                <div class="comment-time">Hace 2 días</div>
+                <button class="like-button">👍 Me gusta</button>
+                <button class="dislike-button">👎 Dislike</button>
+            </div>
+        </div>
+
+        <div class="comment">
+            <img src="img/BR.png" alt="Usuario 2">
+            <div class="comment-body">
+                <h4>Jorge Hernandez</h4>
+                <p>Un cortometraje conmovedor. Refleja lo que muchos jóvenes enfrentan en su vida diaria.
+                    Definitivamente lo recomendaría.</p>
+                <div class="comment-time">Hace 3 días</div>
+                <button class="like-button">👍 Me gusta</button>
+                <button class="dislike-button">👎 Dislike</button>
+            </div>
+        </div>
+
+        <div class="comment">
+            <img src="img/E.png" alt="Usuario 3">
+            <div class="comment-body">
+                <h4>Eduardo Martinez</h4>
+                <p> Me identifiqué mucho con Charlie. A veces la presión de grupo puede ser abrumadora, pero es
+                    importante recordar que nuestros sueños y valores son lo que realmente importan. Este cortometraje
+                    me inspiró a ser más fuerte frente a las influencias negativas.</p>
+                <div class="comment-time">Hace 5 días</div>
+                <button class="like-button">👍 Me gusta</button>
+                <button class="dislike-button">👎 Dislike</button>
+            </div>
+        </div>
+
+        <div class="comment">
+            <img src="img/J.png" alt="Usuario 4">
+            <div class="comment-body">
+                <h4>Jocelyn Moran</h4>
+                <p>Es un gran recordatorio de que la verdadera amistad no se mide por lo que hacemos, sino por cómo
+                    apoyamos a los demás.</p>
+                <div class="comment-time">Hace 1 semana</div>
+                <button class="like-button">👍 Me gusta</button>
+                <button class="dislike-button">👎 Dislike</button>
+            </div>
+        </div>
+
+        <div class="comment">
+            <img src="img/C.png" alt="Usuario 5">
+            <div class="comment-body">
+                <h4>Charlie Ramirez</h4>
+                <p>El mensaje del cortometraje es muy poderoso. Me hizo reflexionar sobre las decisiones que tomamos
+                    para encajar.</p>
+                <div class="comment-time">Hace 2 semana</div>
+                <button class="like-button">👍 Me gusta</button>
+                <button class="dislike-button">👎 No me gusta</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Desarrollado por 1°D 2024 &copy</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
